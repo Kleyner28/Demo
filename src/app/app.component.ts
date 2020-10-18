@@ -18,10 +18,11 @@ export class AppComponent {
     this.initializeApp();
   }
 
-  initializeApp() {
+ initializeApp() {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });
   }
+   
 }

@@ -1,24 +1,49 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <ion-slides>
-      <ion-slide>
-        <h2>Welcome</h2>
-            <p>The <b>ionic conference app</b> is a practical preview of the ionic framework in action, and a demonstration of proper code use.</p>
-      </ion-slide>    
-    </ion-slides>
-  </div>
-</ion-content>
+<ion-app>
+    <ion-content fullscreen class="ion-padding" scroll-y="false">
+      <ion-slides pager="true">
+  
+        <ion-slide>
+          <div class="slide">
+            <img src="http://isi.ul.edu.co/isi/pluginfile.php/1/theme_moove/marketing3icon/1600375341/isi-03.jpg"/>
+            <h2>Bienvenidos</h2>
+            <p>La <b>App-CUL</b> le ta da una gran bienvenida a nuestra plataforma para que puedas disfrutar de todos nuestros
+            servicios al alcance de tu mano </p>
+          </div>
+        </ion-slide>
+  
+        <ion-slide>
+          <div class="slide">
+          <img src="http://isi.ul.edu.co/isi/pluginfile.php/1/theme_moove/marketing1icon/1600375341/isi-04.jpg"/>
+          <h2>What is Ionic?</h2>
+          <p><b>Ionic Framework</b> is an open source SDK that enables developers to build high quality mobile apps with web technologies like HTML, CSS, and JavaScript.</p>
+          </div>        
+        </ion-slide>
+  
+        <ion-slide>
+          <div clas="slide">
+          <img src="http://isi.ul.edu.co/isi/pluginfile.php/1/theme_moove/marketing4icon/1600375341/isi-05.jpg"/>
+          <h2>What is Ionic Appflow?</h2>
+          <p><b>Ionic Appflow</b> is a powerful set of services and features built on top of Ionic Framework that brings a totally new level of app development agility to mobile dev teams.</p>
+        </div>
+        </ion-slide>
+  
+        <ion-slide>
+          <div clas="slide">
+          <img src="http://isi.ul.edu.co/isi/pluginfile.php/1/theme_moove/marketing2icon/1600375341/isi-02.jpg"/>
+          <h2>Ready to Play?</h2>
+          <ion-button fill="clear" href="login">Ingresar <ion-icon slot="end" name="arrow-forward"></ion-icon></ion-button>
+        </div>
+        </ion-slide>
+  
+      </ion-slides>
+    </ion-content>
+  </ion-app>
+  <script>
+     function 
+            start(){
+      slideOpts = {
+      initialSlide: 1,
+      speed: 400 };
+    }
+  </script>
+  
