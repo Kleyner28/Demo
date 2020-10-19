@@ -1,18 +1,21 @@
 <ion-app>
   <ion-content>
     <div class="section">
-  <form action="action_page.php" method="post">
+  <form>
   <div class="imgcontainer">
     <img src="https://www.ul.edu.co/uleduco/images/logo/LOGO_CULn.png" alt="Avatar" class="avatar">
   </div>
 
   <div class="container">
+    <div>
     <ion-label for="uname"><b>Usuario</b></ion-label>
     <ion-input type="text" placeholder="Ingresar Usuario" name="uname" required></ion-input>
-
+  </div>
+    <br>
+    <div>
     <ion-label for="psw"><b>Contraseña</b></ion-label>
     <ion-input type="password" placeholder="Ingresar Contraseña" name="psw" required></ion-input>
-
+  </div>    
     <ion-button type="submit">Iniciar Sesion</ion-button> <br><br>
 
     <ion-checkbox checked="true" name="remember"></ion-checkbox>
@@ -20,10 +23,20 @@
   </div>
 
   <div class="container" style="background-color:#f1f1f1">
-    <ion-button href="home" type="button" class="cancelbtn">Cancelar</ion-button>
+    <ion-button href="menu" type="button" class="cancelbtn">Cancelar</ion-button>
     <span class="psw">Olvidaste tu <a href="#">contraseña?</a></span>
   </div>
 </form>
 </div>
 </ion-content>
 </ion-app>
+
+<!--<script>
+  function validate(){
+  var name=document.getElementById(uname);
+  var email=document.getElementById(pass);
+  if(name.value == "admin" && email.value == "admin"){}
+    
+  }
+</script>
+-->

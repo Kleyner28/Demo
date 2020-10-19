@@ -1,0 +1,40 @@
+<ion-app center>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button auto-hide="true"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="primary">
+      <ion-button href="news">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>    
+    <ion-title>Convocatoria De Emprendimiento</ion-title>
+  </ion-toolbar>
+
+  <ion-content>         
+    <ion-card href="new1" style="align-content: center;">
+      <img src="assets/Img/monitorias.jpg" />
+      <ion-card-header>
+        <ion-card-subtitle>Convocatoria</ion-card-subtitle>
+        <ion-card-title>Monitorias</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Mediante el siguiente formulario usted podrá hacer efectiva su solicitud de ayuda académica, 
+        como lo son las monitorias y tutorías desde cualquier lugar.</ion-card-content>
+        
+          <ion-label for="uname"><b>Nombres</b></ion-label>
+          <ion-input type="text" placeholder="Ingresar Nombres" name="uname" required></ion-input>
+        
+          <br>
+        
+          <ion-label for="last"><b>Apellidos</b></ion-label>
+          <ion-input type="text" placeholder="Ingresar Apellidos" name="psw" required></ion-input>
+        
+          <ion-button type="submit">Enviar formulario</ion-button> <br><br>
+      
+          <ion-checkbox checked="true" name="remember"></ion-checkbox>
+          <ion-label>Aceptar teminos y condiciones</ion-label>
+        
+    </ion-card>    
+  </ion-content>
+</ion-app>

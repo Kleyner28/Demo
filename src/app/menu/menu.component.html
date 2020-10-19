@@ -1,0 +1,131 @@
+<ion-app>
+  <ion-menu side="start" content-id="main-content">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item>
+          <ion-icon name="newspaper" slot="start"></ion-icon>
+          <ion-button href="news" fill="clear">Noticias</ion-button>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="briefcase" slot="start"></ion-icon>
+          <ion-button href="actividades" fill="clear">Actividades</ion-button>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="book" slot="start"></ion-icon>
+          <ion-button href="notes" fill="clear">Notas</ion-button>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="people" slot="start"></ion-icon>
+          <ion-button href="group" fill="clear">Grupos</ion-button>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="person" slot="start"></ion-icon>
+          <ion-button href="profile" fill="clear">Perfil</ion-button>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="settings" slot="start"></ion-icon>
+          <ion-button href="menu" fill="clear" disabled="true">Configuracion</ion-button>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>CORPORACION UNIVERSITARIA LATINOAMERICANA</ion-title>
+      </ion-toolbar>
+    </ion-header>        
+
+    <ion-content fullscreen class="ion-padding">  
+      <ion-content >
+         <ion-slides pager="true" [options]="slideOpts">
+
+        <ion-slide>          
+          <img src="assets/Img/seminario.jpg">          
+        </ion-slide> 
+
+        <ion-slide>          
+          <img src="assets/Img/Banner-cul.png">          
+        </ion-slide>        
+        
+        <ion-slide>          
+          <img src="assets/Img/grado.png">          
+        </ion-slide>        
+
+        <ion-slide>          
+          <img src="assets/Img/soporte.jpg">          
+        </ion-slide>        
+      </ion-slides>     
+      <br> <br>
+          
+      <ion-item-divider color="primary">
+        <ion-label>
+          <h1>Noticias</h1>
+        </ion-label>
+      </ion-item-divider>      
+       
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-card href="new1">
+              <img href="new1" src="assets/Img/convocatoria.jpg" />
+              <ion-card-header>
+                <ion-card-subtitle>Convocatoria</ion-card-subtitle>
+                <ion-card-title>Emprendedor o Empresario</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                Si eres emprendedor o empresario, trae tus proyectos e ideas y lleva a cabo programas que ayudaran a cumplir con
+                tus objetivos.
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+
+          <ion-col>
+            <ion-card href="new1">
+              <img src="assets/Img/monitorias.jpg" />
+              <ion-card-header>
+                <ion-card-subtitle>Convocatoria</ion-card-subtitle>
+                <ion-card-title>Monitorias</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                Mediante el siguiente formulario usted podrá hacer efectiva su solicitud de ayuda académica, 
+                como lo son las monitorias y tutorías desde cualquier lugar.</ion-card-content>
+            </ion-card>
+          </ion-col>
+
+          <ion-col>
+            <ion-card href="new1">
+        <img src="assets/Img/oferta_laboral.png"/>
+        <ion-card-header>
+          <ion-card-subtitle>Oportunidad</ion-card-subtitle>
+          <ion-card-title>Oferta Laboral</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          Haz parte de la familia Cul y trabaja con nosotros. Si eres estudiante buscando practias ingresa aquí.
+          Llena el formulario y podras encontrar diferentes ofertas laborales.
+        </ion-card-content>
+      </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>     
+
+      <ion-item-divider color="primary">
+        <ion-label>
+          <h1>Tramites</h1>
+        </ion-label>
+      </ion-item-divider>               
+
+      </ion-content>  
+      </ion-content>  
+         
+  </div>      
+  </ion-app>
