@@ -8,7 +8,7 @@
         <ion-icon name="arrow-back"></ion-icon>
       </ion-button>
     </ion-buttons>
-    <ion-title>Noticias</ion-title>
+    <ion-title>Grupos</ion-title>
   </ion-toolbar>
   
   <ion-content>      
@@ -19,7 +19,7 @@
 
       <ion-item href="group1">
         <ion-avatar slot="start">
-          <img src="assets/Img/Banner-cul.png">
+          <img src="https://www.neostages.com/wp-content/uploads/2016/05/app-movil-380x380.png">
         </ion-avatar>
         <ion-label>
           <h2>Electiva Disciplinar</h2>
@@ -30,7 +30,7 @@
 
       <ion-item href="group1">
         <ion-avatar slot="start">
-          <img src="assets/Img/convocatoria.jpg">
+          <img src="https://www.negocioscontralaobsolescencia.com/uploads/8/7/8/3/87835438/art-53-electgital-28022017111101_orig.jpg">
         </ion-avatar>
         <ion-label>
           <h2>Electronica Analoga</h2>
@@ -56,7 +56,7 @@
 
       <ion-item href="group1">
         <ion-avatar slot="start">
-          <img src="assets/Img/LOGO_CULn.png">
+          <img src="https://www.ilovecpa.com/magazine/wp-content/uploads/2018/04/portada11.png">
         </ion-avatar>
         <ion-label>
           <h2>Metodos Numericos</h2>
@@ -116,6 +116,13 @@
           <p>Do or do not. There is no try...</p>
         </ion-label>
       </ion-item>
+
+      <ion-infinite-scroll>
+        <ion-infinite-scroll-content
+          loadingSpinner="bubbles"
+          loadingText="Loading more data…">
+        </ion-infinite-scroll-content>
+      </ion-infinite-scroll>
     </ion-list>
   </ion-content>
 </ion-app>

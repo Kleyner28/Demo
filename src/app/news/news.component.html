@@ -17,7 +17,7 @@
         Noticias Recientes
       </ion-list-header>
 
-      <ion-item href="new1">
+      <ion-item href="http://ul.edu.co/uleduco/images//pdf/Bienestar/INFO_CULTURA_Y_DEPORTE_compressed.pdf" target="_blank">
         <ion-avatar slot="start">
           <img src="assets/Img/Banner-cul.png">
         </ion-avatar>
@@ -29,7 +29,7 @@
         </ion-label>
       </ion-item>
 
-      <ion-item href="new1">
+      <ion-item href="https://www.ul.edu.co/uleduco/images/pdf/SST/Seminario_Internacional.pdf" target="_blank">
         <ion-avatar slot="start">
           <img src="assets/Img/convocatoria.jpg">
         </ion-avatar>
@@ -51,7 +51,7 @@
         </ion-label>
       </ion-item>
 
-      <ion-item href="new1">
+      <ion-item href="https://forms.office.com/Pages/ResponsePage.aspx?id=veYLdDb9DkeU2Q8Md3-tube9lEgPCYhOjLiSWt8xjG1UQ1FSV1dYOVUyVVlDNktSSzlDQkxPRDRXOS4u" target="_blank">
         <ion-avatar slot="start">
           <img src="assets/Img/LOGO_CULn.png">
         </ion-avatar>
@@ -63,7 +63,7 @@
       </ion-item>
     </ion-list>
 
-    <ion-list>
+    <ion-list id="list">
       <ion-list-header>
         Antiguas
       </ion-list-header>
@@ -111,6 +111,14 @@
           <p>Do or do not. There is no try...</p>
         </ion-label>
       </ion-item>
+
+      <ion-infinite-scroll>
+        <ion-infinite-scroll-content
+          loadingSpinner="bubbles"
+          loadingText="Loading more data…">
+        </ion-infinite-scroll-content>
+      </ion-infinite-scroll>
+
     </ion-list>
   </ion-content>
 </ion-app>
