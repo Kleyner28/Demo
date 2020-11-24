@@ -1,4 +1,5 @@
 <ion-app>
+  <ion-header translucent>
   <ion-toolbar color="primary">
     <ion-buttons slot="start">
       <ion-menu-button auto-hide="true"></ion-menu-button>
@@ -10,119 +11,86 @@
     </ion-buttons>
     <ion-title>Grupos</ion-title>
   </ion-toolbar>
+</ion-header>
   
   <ion-content>      
-    <ion-list>
-      <ion-list-header>
-        Cursos Matriculados
-      </ion-list-header>
-
-      <ion-item href="group1">
-        <ion-avatar slot="start">
-          <img src="https://www.neostages.com/wp-content/uploads/2016/05/app-movil-380x380.png">
-        </ion-avatar>
-        <ion-label>
-          <h2>Electiva Disciplinar</h2>
-          <h3>II</h3>
-          <p>Desarrollor de aplicaciones moviles y fullstack</p>
-        </ion-label>
-      </ion-item>
-
-      <ion-item href="group1">
-        <ion-avatar slot="start">
-          <img src="https://www.negocioscontralaobsolescencia.com/uploads/8/7/8/3/87835438/art-53-electgital-28022017111101_orig.jpg">
-        </ion-avatar>
-        <ion-label>
-          <h2>Electronica Analoga</h2>
-          <h3>Circuitos Electricos</h3>
-          <p>La electrónica analógica es una rama de la electrónica que estudia los sistemas cuyas variables varían de
-             una forma continua en el tiempo y pueden tomar valores infinitos. <br> 
-             En contraposición, en la electrónica digital las variables solo pueden tomar valores discretos y 
-             tienen siempre un estado perfectamente definido.</p>
-        </ion-label>
-      </ion-item>
-
-      <ion-item href="group1">
-        <ion-avatar slot="start">
-          <img src="assets/Img/grado.png">
-        </ion-avatar>
-        <ion-label>
-          <h2>Electiva Disciplinar</h2>
-          <h3>Base de datos</h3>
-          <p>Una base de datos es un conjunto de datos pertenecientes a un mismo contexto y almacenados sistemáticamente para su posterior uso. <br>
-            En este sentido; una biblioteca puede considerarse una base de datos compuesta en su mayoría por documentos y textos impresos en papel e indexados para su consulta.</p>
-        </ion-label>
-      </ion-item>
-
-      <ion-item href="group1">
-        <ion-avatar slot="start">
-          <img src="https://www.ilovecpa.com/magazine/wp-content/uploads/2018/04/portada11.png">
-        </ion-avatar>
-        <ion-label>
-          <h2>Metodos Numericos</h2>
-          <h3>Operaciones binarias, metodos Gauss Jordan</h3>
-          <p>La mayoría de los métodos matemáticos empleados en ingeniería utilizan variables continuas. 
-            Cuando queremos trasladar estos métodos al ordenador, para facilitar su resolución, nos encontramos con que en un ordenador no es posible realizar cálculos en variable continua de manera eficiente. <br>
-             El ordenador trabaja con una representación de información discreta. Los métodos numéricos se encargan de adaptar métodos matemáticos en variable continua a un sistema de representación de información discreto. </p>
-        </ion-label>
-      </ion-item>
-    </ion-list>
-
-    <ion-list>
-      <ion-list-header>
-        Estudiantes
-      </ion-list-header>
-
-      <ion-item>
-        <ion-avatar slot="start">
-          <img src="assets/Img/soporte.jpg">
-        </ion-avatar>
-        <ion-label>
-          <h2>Poe</h2>
-          <h3>New Ride</h3>
-          <p>I just upgraded my X-Wing. Next time...</p>
-        </ion-label>
-      </ion-item>
-
-      <ion-item>
-        <ion-avatar slot="start">
-          <img src="assets/Img/seminario.jpg">
-        </ion-avatar>
-        <ion-label>
-          <h2>Ben</h2>
-          <h3>Move Along</h3>
-          <p>These aren't the droids you're looking for...</p>
-        </ion-label>
-      </ion-item>
-
-      <ion-item>
-        <ion-avatar slot="start">
-          <img src="assets/Img/monitorias.jpg">
-        </ion-avatar>
-        <ion-label>
-          <h2>Leia</h2>
-          <h3>You're My Only Hope</h3>
-          <p>I've placed information vital to the survival...</p>
-        </ion-label>
-      </ion-item>
-
-      <ion-item>
-        <ion-avatar slot="start">
-          <img src="assets/Img/oferta_laboral.jpg">
-        </ion-avatar>
-        <ion-label>
-          <h2>Yoda</h2>
-          <h3>Size matters not</h3>
-          <p>Do or do not. There is no try...</p>
-        </ion-label>
-      </ion-item>
-
-      <ion-infinite-scroll>
-        <ion-infinite-scroll-content
-          loadingSpinner="bubbles"
-          loadingText="Loading more data…">
-        </ion-infinite-scroll-content>
-      </ion-infinite-scroll>
-    </ion-list>
+    <ion-grid>
+      <ion-row>
+        <ion-col>                            
+            <ion-card href="group1">
+              <img src="https://dmm40cf0lyret.cloudfront.net/wp-content/uploads/2020/08/empresa-desarrollo-aplicaciones.jpg" />
+              <ion-card-header>
+                <ion-card-subtitle>Grupo</ion-card-subtitle>
+                <ion-card-title>Electiva Disciplinar</ion-card-title>
+              </ion-card-header>              
+            </ion-card>          
+        </ion-col>
+        <ion-col>
+          <ion-card>
+            <img src="https://cdn.pixabay.com/photo/2020/03/17/17/46/database-4941338_1280.png" />
+            <ion-card-header>
+              <ion-card-subtitle>Grupo</ion-card-subtitle>
+              <ion-card-title>Base de datos</ion-card-title>
+            </ion-card-header>              
+          </ion-card>          
+        </ion-col>
+        <ion-col>
+          <ion-card>
+            <img src="https://www.educaciontrespuntocero.com/wp-content/uploads/2020/03/fondo-matematicas_23-2148146270.jpg" />
+            <ion-card-header>
+              <ion-card-subtitle>Grupo</ion-card-subtitle>
+              <ion-card-title>Metodos Numericos</ion-card-title>
+            </ion-card-header>              
+          </ion-card>          
+        </ion-col>
+        <ion-col>
+          <ion-card>
+            <img src="https://www.negocioscontralaobsolescencia.com/uploads/8/7/8/3/87835438/art-53-electgital-28022017111101_orig.jpg" />
+            <ion-card-header>
+              <ion-card-subtitle>Grupo</ion-card-subtitle>
+              <ion-card-title>Electronica Analoga</ion-card-title>
+            </ion-card-header>              
+          </ion-card>          
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-card>
+            <img src="https://www.las2orillas.co/wp-content/uploads/2020/07/investigar.jpg" />
+            <ion-card-header>
+              <ion-card-subtitle>Grupo</ion-card-subtitle>
+              <ion-card-title>Metodología de la Investigación</ion-card-title>
+            </ion-card-header>              
+          </ion-card>          
+        </ion-col>
+        <ion-col>
+          <ion-card>
+            <img src="https://sites.google.com/site/hectorgonzalez1obacht/_/rsrc/1472847980693/tema-sistemas-operativos/sistemas%20operativos.png" />
+            <ion-card-header>
+              <ion-card-subtitle>Grupo</ion-card-subtitle>
+              <ion-card-title>Sistemas Operativos</ion-card-title>
+            </ion-card-header>              
+          </ion-card>          
+        </ion-col>
+        <ion-col>
+          <ion-card>
+            <img src="https://www.lifeder.com/wp-content/uploads/2018/02/sistema-en-empresa-min.jpg" />
+            <ion-card-header>
+              <ion-card-subtitle>Grupo</ion-card-subtitle>
+              <ion-card-title>Teoría General de los Sistemas</ion-card-title>
+            </ion-card-header>              
+          </ion-card>          
+        </ion-col>
+        <ion-col>
+          <ion-card>
+            <img src="https://www.abc.com.py/resizer/nxZkwZLPtyeXAXDmt25VXPtO8R8=/910x590/smart/arc-anglerfish-arc2-prod-abccolor.s3.amazonaws.com/public/ZIGYOLEWANC7RFST5FEGZ23Y7I.jpg" />
+            <ion-card-header>
+              <ion-card-subtitle>Grupo</ion-card-subtitle>
+              <ion-card-title>Etica</ion-card-title>
+            </ion-card-header>              
+          </ion-card>          
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </ion-content>
 </ion-app>

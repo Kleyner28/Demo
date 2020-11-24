@@ -1,10 +1,77 @@
-ion-content{
-    text-align: center;        
-}
-
-.section{
-    padding-left: 10px;
+.container {
+    border: 2px solid #3880ff;
+    background-color: white;
     border-radius: 5px;
-    border: blue;
-    border-color: blue;
-}
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .darker {
+    border-color: #ccc;
+    background-color: #ddd;
+    text-align: right;
+  }
+  
+  .container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .container img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+  .msj{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+  .container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+  }
+  
+  .time-right {
+    float: left;
+    color: black;
+  }
+  
+  .time-left {
+    float: right;
+    color: black;
+  }
+
+  ion-input{
+      border: 1px solid #3880ff;
+      border-radius: 2px;
+  }
+
+  .collapsible {
+    background-color: #3880ff;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }

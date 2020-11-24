@@ -8,15 +8,153 @@
         <ion-icon name="arrow-back"></ion-icon>
       </ion-button>
     </ion-buttons>
-    <ion-title>Grupos</ion-title>
+    <ion-title>Electiva Disciplinar</ion-title>
   </ion-toolbar>
   <ion-content>    
-    <img src="https://www.neostages.com/wp-content/uploads/2016/05/app-movil-380x380.png" alt="">  
-    <h2>Electiva Disciplinar II</h2>    
-    <div class="section">
-      <p>Para el desarrollo de la asignatura se emplearán estrategias propias del Aprendizaje Autónomo a través de 
-        lascuales los futuros docentes demostrarán su responsabilidad, creatividad y evolución en cada 
-        uno de losprocesos planteados.</p>
-    </div>
+    <ion-tabs>
+        <ion-tab tab="new">
+          <ion-toolbar>
+            <ion-title>Novedades</ion-title>
+          </ion-toolbar>        
+
+        <ion-content fullscreen>
+          <ion-list>
+            <ion-list-header>
+              Novedades Recientes
+            </ion-list-header>
+      
+            <ion-item href="http://ul.edu.co/uleduco/images//pdf/Bienestar/INFO_CULTURA_Y_DEPORTE_compressed.pdf" target="_blank">
+              <ion-avatar slot="start">
+                <img src="assets/Img/Banner-cul.png">
+              </ion-avatar>
+              <ion-label>
+                <h2>Competencia Danza y Rumba</h2>
+                <h3>2020</h3>
+                <p>Conoce los horarios y fechas de las competencias y actividades fisicas que se llevaran a cabo durante el ultimo trimestre del año        
+                </p>
+              </ion-label>
+            </ion-item>
+      
+            <ion-item href="https://www.ul.edu.co/uleduco/images/pdf/SST/Seminario_Internacional.pdf" target="_blank">
+              <ion-avatar slot="start">
+                <img src="assets/Img/convocatoria.jpg">
+              </ion-avatar>
+              <ion-label>
+                <h2>Convocatoria Emprendimiento</h2>
+                <h3>Emprendedores y/o Empresarios</h3>
+                <p>Llena el siguiente formulario formulario para registrar y participar en la asamblea de proyectos que se da cad viernes en nuestras instalaciones. </p>
+              </ion-label>
+            </ion-item>
+      
+            <ion-item href="new1">
+              <ion-avatar slot="start">
+                <img src="assets/Img/grado.png">
+              </ion-avatar>
+              <ion-label>
+                <h2>Solicitudes de grado</h2>
+                <h3>Hasta el 23 de agosto del 2020</h3>
+                <p>CLick aquí.</p>
+              </ion-label>
+            </ion-item>
+      
+            <ion-item href="https://forms.office.com/Pages/ResponsePage.aspx?id=veYLdDb9DkeU2Q8Md3-tube9lEgPCYhOjLiSWt8xjG1UQ1FSV1dYOVUyVVlDNktSSzlDQkxPRDRXOS4u" target="_blank">
+              <ion-avatar slot="start">
+                <img src="assets/Img/LOGO_CULn.png">
+              </ion-avatar>
+              <ion-label>
+                <h2>Nueva App-CUL</h2>
+                <h3>Plataforma digital para los estudiantes</h3>
+                <p>Disfruta de la nueva app movil CUL donde podras realizar tramites, tareas, consultas, etc. Todo al alcanze de tu mano  </p>
+              </ion-label>
+            </ion-item>
+
+            <ion-infinite-scroll>
+              <ion-infinite-scroll-content
+                loadingSpinner="bubbles"
+                loadingText="Loading more data…">
+              </ion-infinite-scroll-content>
+            </ion-infinite-scroll>
+
+          </ion-list>
+
+        </ion-content>
+        </ion-tab>  
+
+        <!-- <ion-tab tab="job">          
+
+        <ion-content fullscreen class="ion-padding">
+          <h1>Tareas pendientes</h1>
+          <p>Collapsible Set:</p>
+<button type="button" class="collapsible" click="click()">Open Section 1</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Open Section 2</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Open Section 3</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+        </ion-content>
+        </ion-tab>   -->
+
+        <ion-tab tab="chat">
+          <ion-toolbar>
+            <ion-title>Chat</ion-title>
+          </ion-toolbar>        
+
+        <ion-content fullscreen class="ion-padding">
+          <h2>Ultimos mensajes</h2>
+          <div class="container">
+            <img src="https://www.ashoka.org/sites/default/files/styles/medium_1600x1000/public/thumbnails/images/daniela-kreimer.jpg?itok=R89tVtb4" alt="Avatar" style="width:100%;">
+            <p>Chicos me confirman...</p>
+            <span class="time-right">11:00</span>
+          </div>
+          
+          <div class="container darker">
+            <img src="https://lamenteesmaravillosa.com/wp-content/uploads/2018/09/hombre-creido-pensando-que-sabe.jpg" alt="Avatar" class="right" style="width:100%;">
+            <p>Un momento</p>
+            <span class="time-left">11:01</span>
+          </div>
+          
+          <div class="container">
+            <img src="https://www.ashoka.org/sites/default/files/styles/medium_1600x1000/public/thumbnails/images/daniela-kreimer.jpg?itok=R89tVtb4" alt="Avatar" style="width:100%;">
+            <p>Jovenes ya pueden ver la pantalla?</p>
+            <span class="time-right">11:02</span>
+          </div>
+          
+          <div class="container darker">
+            <img src="https://lamenteesmaravillosa.com/wp-content/uploads/2018/09/hombre-creido-pensando-que-sabe.jpg" alt="Avatar" class="right" style="width:100%;">
+            <p>Todavia no profe!</p>
+            <span class="time-left">11:05</span>
+          </div>
+          <div class="msj">
+            <ion-input placeholder="Excribir mensaje..."></ion-input>
+            <ion-button>Enviar</ion-button>
+          </div>
+        </ion-content>
+        </ion-tab>          
+      
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="new">
+          <ion-label>Noticias</ion-label>
+          <ion-icon name="layers"></ion-icon>
+        </ion-tab-button>
+        <!-- <ion-tab-button tab="job">
+          <ion-label>Trabajos</ion-label>
+          <ion-icon name="briefcase"></ion-icon>
+        </ion-tab-button> -->
+        <ion-tab-button tab="chat">
+          <ion-label>Chat</ion-label>
+          <ion-icon name="chatbubbles"></ion-icon>
+        </ion-tab-button>
+        <ion-tab-button tab="settings" disabled="true">
+          <ion-label>Configuracion</ion-label>
+          <ion-icon name="settings"></ion-icon>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
   </ion-content>    
 </ion-app>
